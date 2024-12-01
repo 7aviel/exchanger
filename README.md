@@ -41,8 +41,8 @@ org.oracleone.model.ExchangeRecord: A model class representing exchange rate inf
 org.oracleone.service.Connection: A utility class for making HTTP requests to the exchange rate API.
 
 ## Third-Party Libraries
-- Gson: For JSON parsing.
-- ExchangeRate-API: For fetching real-time exchange rates.
+- [Gson](https://github.com/google/gson): For JSON parsing.
+- [ExchangeRate-API](https://www.exchangerate-api.com/?form=MG0AV3): For fetching real-time exchange rates.
 
 ## Exchange Rates API
 The application uses the ExchangeRate-API to fetch real-time exchange rates. You can configure the base and target currencies in the getExchangeRecordEntity method in the MainMenu class.
