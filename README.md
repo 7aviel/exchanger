@@ -16,12 +16,12 @@ Currency Exchanger is a simple Java application that allows users to convert bet
 
 ## Installation
 1. Clone the repository:
-   ```sh
+   ```
    git clone https://github.com/7aviel/exchanger.git
 Navigate to the project directory:
-
-sh
-cd CurrencyExchanger
+	```
+		cd CurrencyExchanger
+	```
 Build the project using your preferred build tool (e.g., Maven, Gradle).
 
 ## Usage
@@ -47,11 +47,11 @@ org.oracleone.service.Connection: A utility class for making HTTP requests to th
 ## Exchange Rates API
 The application uses the ExchangeRate-API to fetch real-time exchange rates. You can configure the base and target currencies in the getExchangeRecordEntity method in the MainMenu class.
 
-java
+```java
 private ExchangeRecord getExchangeRecordEntity(String baseCurrency, String targetCurrency) {
-    String json = connection.getConnection("https://v6.exchangerate-api.com/v6/your-api-key/pair/" + baseCurrency + "/" + targetCurrency);
-    return gson.fromJson(json, ExchangeRecord.class);
+       String json = connection.getConnection("https://v6.exchangerate-api.com/v6/your-api-key/pair/" + baseCurrency + "/" + targetCurrency);
+   return gson.fromJson(json, ExchangeRecord.class);
 }
-
-Contact
+```
+## Contact
 If you have any questions or suggestions, feel free to reach out at vilcheariel1@gmail.com
